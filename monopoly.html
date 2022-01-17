@@ -382,22 +382,22 @@
                 }
                 else{
                     let check = "<button class = 'butt' id = 'bttn1'>Purchase</button>";
-                    setTimeout(function(){$("#page5").html("<img src = '" + show[co] + ".png'><br>"+ check);}, 4000);  
+                    setTimeout(function(){$("#page5").html("<img src = '" + show[pos[co]] + ".png'><br>"+ check);}, 4000);  
                     setTimeout(function(){
-                        if(buy[co] != 0 && bb2.indexOf(show[co]) != -1){
-                            pp1 -= price[co][1];
-                            pp2 += price[co][1];
+                        if(buy[pos[co]] != 0 && bb2.indexOf(show[pos[co]]) != -1){
+                            pp1 -= price[pos[co]][1];
+                            pp2 += price[pos[co]][1];
                             checkwin();                                 
                         }
-                        if(buy[co] != 0){
+                        if(buy[pos[co]] != 0){
                             swal("This property has been bought!!","Your remain property is " + pp1 + "萬");
                             $("#bttn1").remove();  
                         }
                         $("#bttn1").click(function(){
-                            if(buy[co] == 0){
-                                pp1 -= price[co][0];
-                                bb1.push(show[co]);
-                                buy[co] = 1;    
+                            if(buy[pos[co]] == 0){
+                                pp1 -= price[pos[co]][0];
+                                bb1.push(show[pos[co]]);
+                                buy[pos[co]] = 1;    
                                 swal("Successfully purchase!!!","Your remain property is " + pp1 + "萬", "success");     
                                 $("#bttn1").remove();     
                                 checkwin();          
@@ -422,23 +422,23 @@
                 }
                 else{
                     let check = "<button class = 'butt' id = 'bttn1'>Purchase</button>";
-                    setTimeout(function(){$("#page5").html("<img src = '" + show[co2] + ".png'><br>" +  check);}, 4000);
+                    setTimeout(function(){$("#page5").html("<img src = '" + show[pos[co2]] + ".png'><br>" +  check);}, 4000);
                     //setTimeout(function(){console.log($("#bttn1").html());}, 4100);
                     setTimeout(function(){
-                        if(buy[co2] != 0 && bb1.indexOf(co2) != -1){
-                            pp2 -= price[co2][1];  
-                            pp1 += price[co2][1];    
+                        if(buy[pos[co2]] != 0 && bb1.indexOf(show[pos[co2]]) != -1){
+                            pp2 -= price[pos[co2]][1];  
+                            pp1 += price[pos[co2]][1];    
                             checkwin();                            
                         }
-                        if(buy[co2] != 0){
+                        if(buy[pos[co2]] != 0){
                             swal("This property has been bought!!","Your remain property is " + pp2 + "萬");
                             $("#bttn1").remove();  
                         }
                         $("#bttn1").click(function(){
-                            if(buy[co2] == 0){
-                                pp2 -= price[co2][0];
-                                bb2.push(show[co2]);
-                                buy[co2] = 1;     
+                            if(buy[pos[co2]] == 0){
+                                pp2 -= price[pos[co2]][0];
+                                bb2.push(show[pos[co2]]);
+                                buy[pos[co2]] = 1;     
                                 swal("Successfully purchase!!!","Your remain property is " + pp2 + "萬", "success");     
                                 $("#bttn1").remove();     
                                 checkwin(); 
