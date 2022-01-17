@@ -27,7 +27,7 @@
 
             let a = '<div class="alert alert-info alert-dismissible" style = "width:1100px;float:right;"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
             let b = '<div class="alert alert-info alert-dismissible " style = "width:350px;height:500px;"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
-            let pp1 = 1000, pp2 = 1000;
+            let pp1 = 800, pp2 = 800;
             function selectrole(){
                 $("#img-0").click(function(){
                     console.log("j1");
@@ -498,6 +498,7 @@
                 $("#next").click(function(){
                     $("#page4").remove();
                     $("#page5").css({"display": "block", "overflow": "hidden"});
+                    $("#page5").html("<h2>Click start to roll dice!!!</h2>");
                     $("#page5-1").css({"display": "block", "overflow": "hidden"});
                     $("#page5-1-1").css({"display": "block", "overflow": "hidden"});
                     $("#page5-1-2").css({"display": "block", "overflow": "hidden"});
@@ -835,21 +836,13 @@
                 <blockquote>
                     <ol>
                         <li>
-                            In the beginning, every players gets 10 millions.
+                            In the beginning, every players gets 8 millions.
                         </li>
                         <li>
                             When you're entering the square which asks you to answer few questions, try to answer the questions and get item cards if you win.
                         </li>
                         <li>
-                            You have two ways to win.
-                            <ul>
-                                <li>
-                                    One is if you buy all northern or eastern or western or southern properties.
-                                </li>
-                                <li>
-                                    The other is if you make the rivals bankrupt.
-                                </li>
-                            </ul>
+                            Once you make the rivals bankrupt, you win.
                         </li>
                     </ol>
                 </blockquote>
