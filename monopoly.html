@@ -17,16 +17,16 @@
             let correctrole = "", bb1 = [], bb2 = [], flag = 0;
             let count = 0, ss = 0, count4 = 0, j, co, co2, count2, count3, h, position, aaa, idd;
             let pos = ["p16", "p15", "p14", "p13", "p12", "p11", "p10", "p9", "p22", "p21", "p20", "p19", "p18", "p17", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p23", "p24", "p25", "p26", "p27", "p28"];
-            let xy = {"p16": [1063, 512], "p15": [933, 512], "p14":[820, 512], "p13": [707, 512], "p12": [594, 512], "p11": [480, 512], "p10": [368, 512], "p9": [240, 512], "p22": [240, 419], "p21": [240, 359], "p20": [240, 299], "p19": [240, 239], "p18": [240, 179], "p17": [240, 119], "p1": [240, 51], "p2": [368, 51], "p3": [481, 51], "p4": [594, 51], "p5": [707, 51], "p6": [820, 51], "p7": [933, 51], "p8": [1063, 51], "p23": [1063, 119], "p24": [1063, 179], "p25": [1063, 239], "p26": [1063, 299], "p27": [1063, 359], "p28": [1063, 419]};
+            let xy = {"p16": [1190, 562], "p15": [1063, 562], "p14":[950, 562], "p13": [837, 562], "p12": [724, 562], "p11": [611, 562], "p10": [498, 562], "p9": [380, 562], "p22": [380, 482], "p21": [380, 412], "p20": [380, 352], "p19": [380, 292], "p18": [380, 232], "p17": [380, 172], "p1": [380, 112], "p2": [498, 112], "p3": [611, 112], "p4": [724, 112], "p5": [842, 112], "p6": [957, 112], "p7": [1072, 112], "p8": [1190, 112], "p23": [1190, 172], "p24": [1190, 232], "p25": [1190, 292], "p26": [1190, 352], "p27": [1190, 412], "p28": [1190, 482]};
 
-            let price = {"p14":[70, 84], "p13": [90, 108], "p12": [200, 240], "p11": [150, 180], "p10": [100, 120], "p21": [170, 204], "p20": [110, 132], "p19": [300, 360], "p18": [240, 288], "p17": [150, 180], "p2": [350, 420], "p3": [270, 324], "p4": [235, 282], "p5": [400, 480], "p6": [300, 360], "p23": [55, 66], "p24": [100, 120], "p25": [60, 72], "p26": [80, 96], "p27": [50, 60]};
+            let price = {"p14":[70, 84], "p13": [90, 108], "p12": [200, 385], "p11": [150, 180], "p10": [100, 120], "p21": [170, 204], "p20": [110, 132], "p19": [300, 360], "p18": [240, 288], "p17": [150, 180], "p2": [350, 420], "p3": [270, 324], "p4": [235, 282], "p5": [400, 480], "p6": [300, 360], "p23": [55, 66], "p24": [100, 120], "p25": [60, 72], "p26": [80, 96], "p27": [50, 60]};
 
             let buy = {"p14":0, "p13":0 , "p12":0 , "p11":0 , "p10":0 , "p21":0 , "p20":0 , "p19":0 , "p18":0 , "p17":0 , "p2":0 , "p3":0 , "p4":0 , "p5":0 , "p6":0 , "p23":0 , "p24":0 , "p25":0 , "p26":0 , "p27":0 };
 
             let show = {"p14":"火雞肉飯", "p13":"蚵仔煎", "p12":"牛肉湯", "p11":"意麵", "p10":"虱目魚", "p21":"芋頭酥", "p20":"麻薏", "p19":"米糕", "p18":"太陽餅", "p17":"肉圓", "p2":"小籠包", "p3":"芋圓", "p4":"米粉", "p5":"芒果冰", "p6":"甜不辣", "p23":"麻糬", "p24":"扁食", "p25":"包子", "p26":"黑豬肉", "p27":"紅茶"};
 
-            let a = '<div class="alert alert-info alert-dismissible" style = "width:1100px;float:right;"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
-            let b = '<div class="alert alert-info alert-dismissible " style = "width:350px;height:500px;"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
+            let a = '<div class="alert alert-info alert-dismissible" style = "width:1200px;height:600px;float:right;position:absolute;left:60px;font-size:1.5em"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
+            let b = '<div class="alert alert-info alert-dismissible " style = "width:400px;height:600px;"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
             let pp1 = 800, pp2 = 800;
             function selectrole(){
                 $("#img-0").click(function(){
@@ -507,7 +507,7 @@
                     $("#page5-1-1").html("<img src = " + correctrole + " style='width:100px;height:100px;z-index:2;'>");
                     $("#page5-1-2").html("<img src = '電腦.gif' style='width:100px;height:100px;z-index:3;'>");
                     $("#page5-1-3").html("<button class = 'butt2'>" + name + "</button>");
-                    $("#page5-1-4").html("<button class = 'butt2'>電腦<br>玩家</button>");
+                    $("#page5-1-4").html("<button class = 'butt2'>玩家<br>2</button>");
                     selectpic();
                 });
                 $("#page5-1-3").click(function(){
@@ -685,14 +685,14 @@
             }
             #page5-1-1{
                 position: absolute;
-                top: 512px;
-                left: 1063px;
+                top: 562px;
+                left: 1183px;
                 transform: translate(-50%, -50%);   
             }
             #page5-1-2{
                 position: absolute;
-                top: 512px;
-                left: 1083px;
+                top: 562px;
+                left: 1213px;
                 transform: translate(-50%, -50%);   
             }
             #page5-1-3, #page5-1-5{
