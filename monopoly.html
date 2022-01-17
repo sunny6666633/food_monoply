@@ -459,6 +459,7 @@
             $(document).ready(function (){
                 $("#start").click(function(){
                     $("#page1").remove();
+                    $("#downlo").remove();
                     $("body").css("background-image", "none");
                     $("#page2-1").css("display", "block");
                     setTimeout(function(){$("#page2-2").css("display", "block")}, 1700);
@@ -719,17 +720,33 @@
                 height: 175px;
                 float: left;
             }
+            a{
+                text-decoration: none;
+                font-weight: bold;
+            }
+            a:hover{
+                color:white;
+                font-weight:bold;
+                text-decoration: none;
+            }
+            #downlo{
+                font-size: 20px;
+                position: absolute;
+                bottom: 3%;
+                right: 3%;
+                margin-top: 10px;
+            }
         </style>
     </head>
 
     <body>
         <div class = "page" id = "page1">
-                    <h1>Food monopoly</h1>   
-                    <!-- <img src = "bubbletea.gif" width = "100px" height="100px" style="float: left;"> -->
-                    <button class = "butt" id = "start">START</button>
-                    <!-- <img src = "antibubbletea.gif" width = "100px" height="100px" style="float: left;"> -->
-                    <!-- <img src = "rabit.gif" width = "100%" height = "100%" style="position: absolute;bottom:0%"> -->       
+            <h1>Food monopoly</h1>   
+            <button class = "butt" id = "start">START</button> 
         </div>
+        <div id = "downlo">
+            <a href = "https://sunny6666633.github.io/food_monoply/00957030_00957034_1101%E7%B6%B2%E9%A0%81%E6%9C%9F%E6%9C%AB%E5%B0%88%E6%A1%88.pptx" download="monopoly.pptx">說明文件</a>  
+        </div> 
         <div class = "page" id = "page2-1" style = "display: none;">
             Please enter your name:
         </div>
