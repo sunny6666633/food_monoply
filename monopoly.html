@@ -267,6 +267,10 @@
                                 $("#bttn1").click(function(){
                                     console.log("hi");
                                     if(buy[idd] == 0){
+                                        let time2 = new Date().getTime();
+                                        let content4 = "<div id = '" + time2 + "'><img src = 'player1.png' width = '90px' height = '90px'></div>";
+                                        $("body").append(content4);
+                                        $("#" + time2).css({"position":"absolute", "top":xy[idd][1] + 10 + "px", "left":xy[idd][0] - 40 + "px"});
                                         pp1 -= price[idd][0];
                                         bb1.push(show[idd]);
                                         buy[idd] = 1;    
@@ -336,6 +340,10 @@
                                 }
                                 $("#bttn1").click(function(){
                                     if(buy[idd] == 0){
+                                        let time2 = new Date().getTime();
+                                        let content4 = "<div id = '" + time2 + "'><img src = 'player2.png' width = '90px' height = '90px'></div>";
+                                        $("body").append(content4);
+                                        $("#" + time2).css({"position":"absolute", "top":xy[idd][1] + 10 + "px", "left":xy[idd][0] - 40 + "px"});
                                         pp2 -= price[idd][0];
                                         bb2.push(show[idd]);
                                         buy[idd] = 1;     
@@ -351,17 +359,13 @@
             }
             function checkwin(){
                 if(pp1 < 0){
-                    $("#page5555").remove();
-                    $("#page6").css("display", "block");
                     let content2 = "<img src = 'lose.png' style = 'width: 800px;'>"
-                    $("#page6").html(content2);
+                    $("body").html(content2);
                 }
                 else if(pp2 < 0){
-                    $("#page5555").remove();
-                    $("#page6").css("display", "block");
                     // $("body").css("background-color", "coral");
                     let content2 = "<img src = 'win.gif' style = 'width: 800px;'>"
-                    $("#page6").html(content2);
+                    $("body").html(content2);
                 }
             }
             function travel1(){
@@ -395,6 +399,10 @@
                         }
                         $("#bttn1").click(function(){
                             if(buy[pos[co]] == 0){
+                                let time2 = new Date().getTime();
+                                let content4 = "<div id = '" + time2 + "'><img src = 'player1.png' width = '90px' height = '90px'></div>";
+                                $("body").append(content4);
+                                $("#" + time2).css({"position":"absolute", "top":xy[idd][1] + 10 + "px", "left":xy[idd][0] - 40 + "px"});
                                 pp1 -= price[pos[co]][0];
                                 bb1.push(show[pos[co]]);
                                 buy[pos[co]] = 1;    
@@ -436,6 +444,10 @@
                         }
                         $("#bttn1").click(function(){
                             if(buy[pos[co2]] == 0){
+                                let time2 = new Date().getTime();
+                                let content4 = "<div id = '" + time2 + "'><img src = 'player2.png' width = '90px' height = '90px'></div>";
+                                $("body").append(content4);
+                                $("#" + time2).css({"position":"absolute", "top":xy[idd][1] + 10 + "px", "left":xy[idd][0] - 40 + "px"});
                                 pp2 -= price[pos[co2]][0];
                                 bb2.push(show[pos[co2]]);
                                 buy[pos[co2]] = 1;     
