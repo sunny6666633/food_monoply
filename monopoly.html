@@ -26,7 +26,7 @@
             let show = {"p14":"火雞肉飯", "p13":"蚵仔煎", "p12":"牛肉湯", "p11":"意麵", "p10":"虱目魚", "p21":"芋頭酥", "p20":"麻薏", "p19":"米糕", "p18":"太陽餅", "p17":"肉圓", "p2":"小籠包", "p3":"芋圓", "p4":"米粉", "p5":"芒果冰", "p6":"甜不辣", "p23":"麻糬", "p24":"扁食", "p25":"包子", "p26":"黑豬肉", "p27":"紅茶"};
 
             let a = '<div class="alert alert-info alert-dismissible" style = "width:1200px;height:600px;float:right;position:absolute;left:60px;font-size:1.5em"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
-            let b = '<div class="alert alert-info alert-dismissible " style = "width:400px;height:600px;"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
+            let b = '<div class="alert alert-info alert-dismissible " style = "width:400px;height:600px;z-index:4"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
             let pp1 = 800, pp2 = 800;
             function selectrole(){
                 $("#img-0").click(function(){
@@ -270,7 +270,7 @@
                                         let time2 = new Date().getTime();
                                         let content4 = "<div id = '" + time2 + "'><img src = 'player1.png' width = '90px' height = '90px'></div>";
                                         $("body").append(content4);
-                                        $("#" + time2).css({"position":"absolute", "top":xy[idd][1] + 10 + "px", "left":xy[idd][0] - 40 + "px"});
+                                        $("#" + time2).css({"position":"absolute", "top":xy[idd][1] + 10 + "px", "left":xy[idd][0] - 40 + "px", "z-index":"0"});
                                         pp1 -= price[idd][0];
                                         bb1.push(show[idd]);
                                         buy[idd] = 1;    
@@ -343,7 +343,7 @@
                                         let time2 = new Date().getTime();
                                         let content4 = "<div id = '" + time2 + "'><img src = 'player2.png' width = '90px' height = '90px'></div>";
                                         $("body").append(content4);
-                                        $("#" + time2).css({"position":"absolute", "top":xy[idd][1] + 10 + "px", "left":xy[idd][0] - 40 + "px"});
+                                        $("#" + time2).css({"position":"absolute", "top":xy[idd][1] + 10 + "px", "left":xy[idd][0] - 40 + "px", "z-index":"0"});
                                         pp2 -= price[idd][0];
                                         bb2.push(show[idd]);
                                         buy[idd] = 1;     
@@ -402,7 +402,7 @@
                                 let time2 = new Date().getTime();
                                 let content4 = "<div id = '" + time2 + "'><img src = 'player1.png' width = '90px' height = '90px'></div>";
                                 $("body").append(content4);
-                                $("#" + time2).css({"position":"absolute", "top":xy[idd][1] + 10 + "px", "left":xy[idd][0] - 40 + "px"});
+                                $("#" + time2).css({"position":"absolute", "top":xy[pos[co]][1] + 10 + "px", "left":xy[pos[co]][0] - 40 + "px", "z-index":"0"});
                                 pp1 -= price[pos[co]][0];
                                 bb1.push(show[pos[co]]);
                                 buy[pos[co]] = 1;    
@@ -447,7 +447,7 @@
                                 let time2 = new Date().getTime();
                                 let content4 = "<div id = '" + time2 + "'><img src = 'player2.png' width = '90px' height = '90px'></div>";
                                 $("body").append(content4);
-                                $("#" + time2).css({"position":"absolute", "top":xy[idd][1] + 10 + "px", "left":xy[idd][0] - 40 + "px"});
+                                $("#" + time2).css({"position":"absolute", "top":xy[pos[co]][1] + 10 + "px", "left":xy[pos[co2]][0] - 40 + "px", "z-index":"0"});
                                 pp2 -= price[pos[co2]][0];
                                 bb2.push(show[pos[co2]]);
                                 buy[pos[co2]] = 1;     
