@@ -573,16 +573,16 @@
                             last = "#q4";
                         }); 
                         $("#subm").click(function(){
-                            swal("此題答案為: " + data[k].ans);
                             if(answer == data[k].ans){
-                                swal("答對了!!!\n你贏得20萬喔喔喔");
+                                swal("答對了!!!\n你贏得20萬喔喔喔\n此題答案為: " + data[k].ans);
                                 if(flag == 1)
                                     pp1 += 20;
                                 else
                                     pp2 += 20;
                             }
-                            else
-                                swal("答錯了XXXX");
+                            else{
+                                swal("答錯了XXXX\n此題答案為: " + data[k].ans);
+                            }
                             $("#subm").remove();
                         });                           
                     });
