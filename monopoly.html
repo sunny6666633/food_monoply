@@ -241,15 +241,15 @@
                             );
                         }
                         else if(pos[co] == "p8"){
-                            setTimeout(function(){swal("You have been stopped one round!!!!!");}, 4000);
+                            setTimeout(function(){swal("你被禁止行動一回合!!!!!");}, 4000);
                         } 
                         else if(pos[co] == "p9"){
                             pp1 -= 50;
-                            setTimeout(function(){swal("You have been deducted 500 thousand!!! ","Your remain property is " + pp1 + "萬");checkwin()}, 4000);   
+                            setTimeout(function(){swal("你被扣除50萬元!!! ","你剩餘的總資產為 " + pp1 + "萬");checkwin()}, 4000);   
                         }
                         else if(pos[co] == "p16"){
                             pp1 += 5;
-                            setTimeout(function(){swal("You have got 50 thousand!!!","Your remain property is " + pp1 + "萬");checkwin()}, 4000);
+                            setTimeout(function(){swal("你贏得50萬元!!!","你剩餘的總資產為 " + pp1 + "萬");checkwin()}, 4000);
                         }
                         else{
                             let check = "<button class = 'butt' id = 'bttn1'>Purchase</button>";
@@ -261,7 +261,7 @@
                                     checkwin();                                  
                                 }
                                 if(buy[idd] != 0){
-                                    swal("This property has been bought!!","Your remain property is " + pp1 + "萬");
+                                    swal("此地已被購買!!","你剩餘的總資產為 " + pp1 + "萬");
                                     $("#bttn1").remove();  
                                 }
                                 $("#bttn1").click(function(){
@@ -274,7 +274,7 @@
                                         pp1 -= price[idd][0];
                                         bb1.push(show[idd]);
                                         buy[idd] = 1;    
-                                        swal("Successfully purchase!!!","Your remain property is " + pp1 + "萬", "success");     
+                                        swal("購買成功!!!","你剩餘的總資產為 " + pp1 + "萬", "success");     
                                         $("#bttn1").remove();  
                                         checkwin();             
                                     }       
@@ -314,15 +314,15 @@
                             );
                         }
                         else if(pos[co2] == "p8"){
-                            setTimeout(function(){swal("You have been stopped one round!!!!!");}, 4000); 
+                            setTimeout(function(){swal("你已被禁止行動一回合!!!!!");}, 4000); 
                         } 
                         else if(pos[co2] == "p9"){
                             pp2 -= 50;
-                            setTimeout(function(){swal("You have been deducted 500 thousand!!!","Your remain property is " + pp2 + "萬");checkwin();  }, 4000);
+                            setTimeout(function(){swal("你被扣除50萬!!!","你剩餘的總資產為 " + pp2 + "萬");checkwin();  }, 4000);
                         }
                         else if(pos[co2] == "p16"){
                             pp2 += 5;
-                            setTimeout(function(){swal("You have got 50 thousand!!!","Your remain property is " + pp2 + "萬");checkwin();  }, 4000); 
+                            setTimeout(function(){swal("你贏得50萬!!!","你剩餘的總資產為 " + pp2 + "萬");checkwin();  }, 4000); 
                         }
                         else{
                             let check = "<button class = 'butt' id = 'bttn1'>Purchase</button>";
@@ -335,7 +335,7 @@
                                     checkwin();                     
                                 }
                                 if(buy[idd] != 0){
-                                    swal("This property has been bought!!","Your remain property is " + pp2 + "萬");
+                                    swal("此地已被購買!!","你剩餘的總資產為 " + pp2 + "萬");
                                     $("#bttn1").remove();  
                                 }
                                 $("#bttn1").click(function(){
@@ -347,7 +347,7 @@
                                         pp2 -= price[idd][0];
                                         bb2.push(show[idd]);
                                         buy[idd] = 1;     
-                                        swal("Successfully purchase!!!","Your remain property is " + pp2 + "萬", "success");     
+                                        swal("購買成功!!!","你剩餘的總資產為 " + pp2 + "萬", "success");     
                                         $("#bttn1").remove();  
                                         checkwin();    
                                     }         
@@ -374,15 +374,15 @@
                 if(pos[co] == "p7" || pos[co] == "p15" || pos[co] == "p22" || pos[co] == "p28")
                     setTimeout(function(){ question(), "slower";} ,4000);
                 else if(pos[co] == "p8"){
-                    setTimeout(function(){swal("You have been stopped one round!!!!!");}, 4000);
+                    setTimeout(function(){swal("你已被禁止行動一回合!!!!!");}, 4000);
                 } 
                 else if(pos[co] == "p9"){
                     pp1 -= 50;
-                    setTimeout(function(){swal("You have been deducted 500 thousand!!!","Your remain property is " + pp1 + "萬");checkwin(); }, 4000);   
+                    setTimeout(function(){swal("你被扣除50萬!!!","你剩餘的總資產為 " + pp1 + "萬");checkwin(); }, 4000);   
                 }
                 else if(pos[co] == "p16"){
                     pp1 += 5;
-                    setTimeout(function(){swal("You have got 50 thousand!!!","Your remain property is " + pp1 + "萬");checkwin();  }, 4000);
+                    setTimeout(function(){swal("你贏得50萬!!!","你剩餘的總資產為 " + pp1 + "萬");checkwin();  }, 4000);
                 }
                 else{
                     let check = "<button class = 'butt' id = 'bttn1'>Purchase</button>";
@@ -394,7 +394,7 @@
                             checkwin();                                 
                         }
                         if(buy[pos[co]] != 0){
-                            swal("This property has been bought!!","Your remain property is " + pp1 + "萬");
+                            swal("此地已被購買!!","你剩餘的總資產為 " + pp1 + "萬");
                             $("#bttn1").remove();  
                         }
                         $("#bttn1").click(function(){
@@ -406,7 +406,7 @@
                                 pp1 -= price[pos[co]][0];
                                 bb1.push(show[pos[co]]);
                                 buy[pos[co]] = 1;    
-                                swal("Successfully purchase!!!","Your remain property is " + pp1 + "萬", "success");     
+                                swal("購買成功!!!","你剩餘的總資產為 " + pp1 + "萬", "success");     
                                 $("#bttn1").remove();     
                                 checkwin();          
                             }       
@@ -418,15 +418,15 @@
                 if(pos[co2] == "p7" || pos[co2] == "p15" || pos[co2] == "p22" || pos[co2] == "p28")
                     setTimeout(function(){ question(), "slower";} ,4000);  
                 else if(pos[co2] == "p8"){
-                    setTimeout(function(){swal("You have been stopped one round!!!!!");}, 4000);
+                    setTimeout(function(){swal("你已被禁止行動一回合!!!!!");}, 4000);
                 } 
                 else if(pos[co2] == "p9"){
                     pp2 -= 50;
-                    setTimeout(function(){swal("You have been deducted 500 thousand!!!","Your remain property is " + pp2 + "萬");checkwin();}, 4000);
+                    setTimeout(function(){swal("你被扣除50萬!!!","你剩餘的總資產為 " + pp2 + "萬");checkwin();}, 4000);
                 }
                 else if(pos[co2] == "p16"){
                     pp2 += 5;
-                    setTimeout(function(){swal("You have got 50 thousand!!!","Your remain property is " + pp2 + "萬");checkwin();}, 4000); 
+                    setTimeout(function(){swal("你贏得50萬!!!","你剩餘的總資產為 " + pp2 + "萬");checkwin();}, 4000); 
                 }
                 else{
                     let check = "<button class = 'butt' id = 'bttn1'>Purchase</button>";
@@ -439,7 +439,7 @@
                             checkwin();                            
                         }
                         if(buy[pos[co2]] != 0){
-                            swal("This property has been bought!!","Your remain property is " + pp2 + "萬");
+                            swal("此地已被購買!!","你剩餘的總資產為 " + pp2 + "萬");
                             $("#bttn1").remove();  
                         }
                         $("#bttn1").click(function(){
@@ -451,7 +451,7 @@
                                 pp2 -= price[pos[co2]][0];
                                 bb2.push(show[pos[co2]]);
                                 buy[pos[co2]] = 1;     
-                                swal("Successfully purchase!!!","Your remain property is " + pp2 + "萬", "success");     
+                                swal("購買成功!!!","你剩餘的總資產為 " + pp2 + "萬", "success");     
                                 $("#bttn1").remove();     
                                 checkwin(); 
                             }         
@@ -460,7 +460,7 @@
                 }
             }
             function selectpos(e){
-                position = prompt( "Please input your ideal position(0(start) to 27)(clockwise)\nYou cannot choose 14!!!:" );
+                position = prompt( "請輸入你想前往的地點(0(start) to 27)(順時鐘)\n不能選擇14!!!:" );
                 if(e == 2)
                     count4 = parseInt(position);
                 else
@@ -482,7 +482,7 @@
                         $("#page2-1").remove();
                         $("#page2-2").remove();
                         $("#page3-1").css("display", "block");
-                        let name2 = "Hello " + name + ", please select a role";
+                        let name2 = name +  " 你好" + ", 請選擇一個角色";
                         $("#page3-1").css("top", "10%");
                         $("#page3-2").css("top", "70%");
                         $("#page3-1").prepend(name2);   
@@ -510,7 +510,7 @@
                 $("#next").click(function(){
                     $("#page4").remove();
                     $("#page5").css({"display": "block", "overflow": "hidden"});
-                    $("#page5").html("<h2>Click start to roll dice!!!</h2>");
+                    $("#page5").html("<h2>點擊START來擲骰子!!!</h2>");
                     $("#page5-1").css({"display": "block", "overflow": "hidden"});
                     $("#page5-1-1").css({"display": "block", "overflow": "hidden"});
                     $("#page5-1-2").css({"display": "block", "overflow": "hidden"});
@@ -754,14 +754,14 @@
 
     <body>
         <div class = "page" id = "page1">
-            <h1>Food monopoly</h1>   
+            <h1>台灣美食大富翁</h1>   
             <button class = "butt" id = "start">START</button> 
         </div>
         <div id = "downlo">
             <a href = "https://sunny6666633.github.io/food_monoply/00957030_00957034_1101%E7%B6%B2%E9%A0%81%E6%9C%9F%E6%9C%AB%E5%B0%88%E6%A1%88.pptx" download="monopoly.pptx">說明文件</a>  
         </div> 
         <div class = "page" id = "page2-1" style = "display: none;">
-            Please enter your name:
+            請輸入你的名字:
         </div>
         <div class = "page" id = "page2-2" style = "display: none">    
             <input id = "name">
@@ -843,18 +843,18 @@
         
         <div class = "page" id = "page4" style = "display: none">
             <p>
-                Welcome to food paradise!!<br>
-                The following is the rule of food paradise:<br>
+                歡迎來到美食天堂!!<br>
+                以下為美食天堂的規則:<br>
                 <blockquote>
                     <ol>
                         <li>
-                            In the beginning, every players gets 8 millions.
+                            一開始每位玩家會被分配到八百萬
                         </li>
                         <li>
-                            When you're entering the square which asks you to answer few questions, try to answer the questions and get item cards if you win.
+                            當你走到空白格時，請回答問題並得到獎金！
                         </li>
                         <li>
-                            Once you make the rivals bankrupt, you win.
+                            一旦對手破產，你就會贏得勝利！
                         </li>
                     </ol>
                 </blockquote>
